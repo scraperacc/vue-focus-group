@@ -1,6 +1,7 @@
 <template>
   <div>
     <button @click="changeCount">changeCount</button>
+
     <h2>{{count}}</h2>
   </div>
 </template>
@@ -29,9 +30,24 @@ export default {
       for(let i = 1; i <= 1000; i++) {
         this.count += 1;
       }
-    }
+    },
+
+    recousiveChange() {
+      setTimeout(() => {
+        this.count++;
+      console.log(this.count)
+      if (this.count >= 100) {
+        return;
+      }
+      this.recousiveChange()
+      }, 0);
+    },
   }
 }
+// data i mej state ic property ka te che
+//
+// arandznacnel amenakarevor banery stexic, 
+// practicle example erp vor mi elementi tag y poxem ira chikdery kexnen te che
 </script>
 
 <style>
