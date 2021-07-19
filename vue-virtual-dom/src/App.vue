@@ -4,12 +4,13 @@ git branch -M main<template>
     <!-- <TagUpdate /> -->
     <!-- <LoopExample /> -->
     <!-- <AsyncronUpdateExample /> -->
-    <ImpactOfChangesOnChildren />
+    <button @click="hanfle()">Click me</button>
+    <!-- <ImpactOfChangesOnChildren /> -->
   </div>
 </template>
 
 <script>
-import ImpactOfChangesOnChildren from "./components/ImpactOfChangesOnChildren.vue";
+// import ImpactOfChangesOnChildren from "./components/ImpactOfChangesOnChildren.vue";
 // import AsyncronUpdateExample from "./components/AsyncronUpdateExample.vue"
 // import DOMUpdates from './components/DOMUpdatesWidthString.vue';
 // import DOMUpdates from './components/DOMUpdatesWidthArray.vue';
@@ -33,12 +34,19 @@ export default {
     // TagUpdate
     // LoopExample
     // AsyncronUpdateExample
-    ImpactOfChangesOnChildren
+    // ImpactOfChangesOnChildren
     },
 
   mounted() {
   //   console.log(compile_())
     // console.log(this._vnode)
+  },
+
+  methods: {
+    hanfle() {
+      console.log(this);
+      // console.log(e);
+    }
   }
 }
 </script>

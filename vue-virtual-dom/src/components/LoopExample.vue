@@ -44,10 +44,6 @@ export default {
     },
   }
 }
-// data i mej state ic property ka te che
-//
-// arandznacnel amenakarevor banery stexic, 
-// practicle example erp vor mi elementi tag y poxem ira chikdery kexnen te che
 </script>
 
 <style>
